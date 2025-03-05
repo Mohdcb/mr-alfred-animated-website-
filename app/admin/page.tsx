@@ -33,7 +33,7 @@ interface Banner {
   title: string;
 }
 
-const BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3000";
+const BASE_URL = process.env.NEXT_PUBLIC_API_URL || "https://finanace-backend.onrender.com";
 
 export default function AdminDashboard() {
   const [activeSection, setActiveSection] = useState<string>("company")
@@ -98,7 +98,7 @@ export default function AdminDashboard() {
         const updatedCompanyInfo = {
           ...companyInfo,
           logo: companyInfo.logo && !companyInfo.logo.startsWith('http') 
-            ? `${process.env.NEXT_PUBLIC_API_URL||"http://localhost:3000"}${companyInfo.logo}`
+            ? `${process.env.NEXT_PUBLIC_API_URL||"https://finanace-backend.onrender.com"}${companyInfo.logo}`
             : companyInfo.logo
         }
         setCompanyInfo(updatedCompanyInfo)
@@ -108,7 +108,7 @@ export default function AdminDashboard() {
         const updatedBanners = banners.map((banner: Banner) => ({
           ...banner,
           image: banner.image && !banner.image.startsWith('http')
-            ? `${process.env.NEXT_PUBLIC_API_URL||"http://localhost:3000"}${banner.image}`
+            ? `${process.env.NEXT_PUBLIC_API_URL||"https://finanace-backend.onrender.com"}${banner.image}`
             : banner.image
         }))
         setBanners(updatedBanners)

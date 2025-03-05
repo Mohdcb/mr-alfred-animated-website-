@@ -15,7 +15,7 @@ interface CartItem {
   instock: string;
 }
 
-const BASE_URL = process.env.NEXT_PUBLIC_API_URL||"http://localhost:3000";
+const BASE_URL = process.env.NEXT_PUBLIC_API_URL||"https://finanace-backend.onrender.com";
 
 export default function Cart() {
   const [cart, setCart] = useState<CartItem[]>([]);
