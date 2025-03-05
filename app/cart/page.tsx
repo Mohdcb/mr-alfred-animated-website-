@@ -15,7 +15,7 @@ interface CartItem {
   instock: string;
 }
 
-const BASE_URL = process.env.NEXT_PUBLIC_API_URL;
+const BASE_URL = process.env.NEXT_PUBLIC_API_URL||"http://localhost:3000";
 
 export default function Cart() {
   const [cart, setCart] = useState<CartItem[]>([]);

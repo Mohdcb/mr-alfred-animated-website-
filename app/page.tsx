@@ -7,7 +7,7 @@ import { Search, Filter, Plus, ChevronRight, Grid2X2, Minus } from "lucide-react
 import { axiosInstance } from "@/API/authapi"
 import { toast } from "react-hot-toast"
 
-const BASE_URL = process.env.NEXT_PUBLIC_API_URL;
+const BASE_URL = process.env.NEXT_PUBLIC_API_URL||"http://localhost:3000";
 
 interface Category {
   id: string;
