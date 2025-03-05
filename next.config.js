@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['localhost', 'your-production-domain.com'],
+    domains: ['localhost', 'delivery-six-psi.vercel.app','finanace-backend.onrender.com'],
   },
 }
 
