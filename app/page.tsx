@@ -147,9 +147,9 @@ export default function Home() {
         viewport={{ once: true, amount: 0.3 }}
         variants={fadeIn}
       >
-        <div className="border-2 border-[#80C0C0] rounded-full md:w-[700px] md:h-[700px] xs:w-[400px] xs:h-[400px] flex justify-center items-center flex-col relative">
+        <div className="border-2 border-[#80C0C0] rounded-full md:w-[700px] md:h-[700px] xs:w-[340px] xs:h-[340px] flex justify-center items-center flex-col relative">
           <motion.h1
-            className="text-center font-gilroy-sb md:text-[45px] md:pt-24 xs:text-[45px] leading-[58px] xs:w-4/5 md:w-full xs:leading-9 md:leading-[44px] xs:pt-6"
+            className="text-center font-gilroy-sb md:text-[45px] md:pt-24 xs:text-[35px] leading-[58px] xs:w-4/5 md:w-full xs:leading-9 md:leading-[44px] xs:pt-6"
             variants={slideUp}
           >
             Maximize your rental revenue <br />
@@ -157,7 +157,7 @@ export default function Home() {
           </motion.h1>
 
           <motion.p
-            className="font-gilroy-b md:text-[20px] xs:w-1/2 md:w-full text-center xs:text-[14px] pt-2"
+            className="font-gilroy-b md:text-[20px] xs:w-1/2 md:w-full text-center xs:text-[12px] pt-2"
             variants={slideUp}
           >
             DET- integrated Vacation Rental Management Software
@@ -197,39 +197,39 @@ export default function Home() {
           {[
             {
               src: "/images/airbnb.png",
-              position: "md:top-[5.5rem] md:left-[35.5rem] xs:top-[0rem] xs:left-[1rem]",
+              position: "md:top-[5.5rem] md:left-[35.5rem] xs:top-[1rem] xs:left-[1rem]",
               borderRadius: "rounded-full",
             },
             {
               src: "/images/vrbro.png",
-              position: "md:top-[19.5rem] md:left-[40rem] xs:top-[10rem] xs:left-[-2rem]",
+              position: "md:top-[19.5rem] md:left-[40rem] xs:top-[10rem] xs:left-[-1.5rem]",
               borderRadius: "rounded-full",
             },
             {
               src: "images/MakeMyTrip_NewLogo 1 (1).png",
-              position: "md:top-[33rem] md:left-[33rem] xs:top-[20rem] xs:left-[3rem]",
+              position: "md:top-[33rem] md:left-[33rem] xs:top-[18rem] xs:left-[3rem]",
               borderRadius: "rounded-[24px]",
             },
             {
               src: "/images/a...png",
-              position: "md:top-[5.5rem] md:right-[35.5rem] xs:top-[0rem] xs:right-[0rem]",
+              position: "md:top-[5.5rem] md:right-[35.5rem] xs:top-[1rem] xs:right-[1rem]",
               borderRadius: "rounded-full",
             },
             {
               src: "/images/b...png",
-              position: "md:top-[19.5rem] md:right-[40rem] xs:top-[10rem] xs:right-[-2rem]",
+              position: "md:top-[19.5rem] md:right-[40rem] xs:top-[10rem] xs:right-[-1.5rem]",
               borderRadius: "rounded-[20px_20px_20px_0px]",
             },
             {
               src: "/images/experia.png",
-              position: "md:top-[33rem] md:right-[33rem] xs:top-[20rem] xs:right-[3rem] ",
+              position: "md:top-[33rem] md:right-[33rem] xs:top-[18rem] xs:right-[3rem] ",
               borderRadius: "rounded-full",
             },
           ].map((logo, index) => (
             <motion.img
               key={index}
               src={logo.src}
-              className={`h-[113px] ${logo.position} absolute md:w-[113px] xs:w-[80px] xs:h-[80px] md:h-[113px] object-cover shadow-md ${logo.borderRadius} border-0 cursor-pointer`}
+              className={`h-[113px] ${logo.position} absolute md:w-[113px] xs:w-[60px] xs:h-[60px] md:h-[113px] object-cover shadow-md ${logo.borderRadius} border-0 cursor-pointer`}
               initial={{ opacity: 0, scale: 0 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
@@ -299,7 +299,7 @@ export default function Home() {
         </motion.div>
 
         <motion.div
-          className="grid md:grid-cols-9 xs:grid-cols-5 flex-1 max-h-[100px] gap-4 items-center justify-between px-10"
+          className="grid md:grid-cols-9 xs:grid-cols-4 flex-1 max-h-[100px] gap-4 items-center justify-between px-10"
           variants={staggerChildren}
         >
           {Array.from({ length: 9 }, (_, i) => (
@@ -337,7 +337,7 @@ export default function Home() {
         variants={fadeIn}
       >
         <motion.div className="flex items-end" variants={slideRight}>
-          <motion.img src="/images/Group 3914.png" alt="" width={235} height={280} style={{ rotate: leftRotation }} />
+          <motion.img src="/images/Group 3914.png" alt=""  style={{ rotate: leftRotation  }}  className="md:w-[235px] md:h-[280px] xs:w-[180px] xs:h-[220px] "/>
           <motion.img
             src="/images/Group 3913.png"
             alt=""
@@ -349,14 +349,14 @@ export default function Home() {
         </motion.div>
 
         <motion.div className="flex justify-center items-center flex-col" variants={slideUp}>
-          <h3 className="font-gilroy-sb text-[40px] text-center text-white">
+          <h3 className="font-gilroy-sb md:text-[40px] xs:text-[30px] text-center text-white">
             Stay Connected with <br />
             50+ OTAs
           </h3>
 
-          <div className="flex py-5 gap-[25px]">
+          <div className="flex md:flex-row  py-5 gap-[25px]">
             <motion.div
-              className="bg-white text-[#008080] px-7 py-5 rounded-[45px] flex gap-2 font-gilroy-b text-[20px] cursor-pointer"
+              className="bg-white text-[#008080] md:px-7 md:py-5 xs:p-3 rounded-[45px] flex gap-2 font-gilroy-b md:text-[20px] cursor-pointer"
               whileHover={{ scale: 1.05, backgroundColor: "white", color: "#008080" }}
               whileTap={{ scale: 0.98 }}
               transition={{ duration: 0.2 }}
@@ -366,7 +366,7 @@ export default function Home() {
             </motion.div>
 
             <motion.div
-              className="bg-white text-[#008080] px-12 font-gilroy-b text-[20px] py-5 rounded-[45px] flex gap-2 cursor-pointer"
+              className="bg-white text-[#008080] md:px-12 font-gilroy-b xs:p-3 md:text-[20px] md:py-5 rounded-[45px] flex gap-2 cursor-pointer"
               whileHover={{ scale: 1.05, backgroundColor: "white", color: "#008080" }}
               whileTap={{ scale: 0.98 }}
               transition={{ duration: 0.2 }}
@@ -385,7 +385,7 @@ export default function Home() {
             className="h-[98px]"
             style={{ rotate: rightRotation }}
           />
-          <motion.img src="/images/Group 3916.png" alt="" width={235} height={280} style={{ rotate: rightRotation }} />
+          <motion.img src="/images/Group 3916.png" alt=""  style={{ rotate: rightRotation }} className="md:w-[235px] md:h-[280px] xs:w-[180px] xs:h-[220px" />
         </motion.div>
       </motion.div>
 
