@@ -4,10 +4,10 @@ import { ArrowUpRight } from "lucide-react"
 import { motion, useScroll, useTransform, useSpring, AnimatePresence } from "framer-motion"
 import { useRef, useState } from "react"
 
-import Header from "../header"
+import Header from "./Components/header"
 
-import Forms from "../forms"
-import Footer from "../footer"
+import Forms from "./Components/forms"
+import Footer from "./Components/footer"
 
 export default function Home() {
   // Animation variants for reuse
