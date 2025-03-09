@@ -1,14 +1,30 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    "./pages/**/*.{ts,tsx}",
-    "./components/**/*.{ts,tsx}",
-    "./app/**/*.{ts,tsx}",
-    "./src/**/*.{ts,tsx}",
+    "./pages/**/*.{ts,tsx,jsx}",
+    "./components/**/*.{ts,tsx,jsx}",
+    "./app/**/*.{ts,tsx,jsx}",
+    "./src/**/*.{ts,tsx,jsx}",
     "*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      'xs': '300px',     // Extra small screens (small phones)
+      'sm': '640px',     // Small screens (default Tailwind breakpoint)
+      'md': '768px',     // Medium screens
+      'lg': '1024px',    // Added this back since you removed other breakpoints
+      'xl': '1280px',    // Added this back since you removed other breakpoints
+      '2xl': '1536px',   // Added this back since you removed other breakpoints
+    },
     extend: {
+      fontFamily: {
+        gilroy: ["Gilroy", "sans-serif"],
+        "gilroy-b": ["Gilroy-Bold", "sans-serif"],
+        "gilroy-sb": ["Gilroy-SemiBold", "sans-serif"],
+        "gilroy-m": ["Gilroy-Medium", "sans-serif"],
+        "gilroy-bl": ["Gilroy-Black", "sans-serif"],
+        "gilroy-r": ["Gilroy", "sans-serif"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -51,6 +67,6 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+  ],
 }
-

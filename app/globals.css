@@ -32,7 +32,7 @@
     @apply border-border;
   }
   body {
-    @apply bg-gray-100 text-foreground;
+   
   }
 }
 
@@ -47,3 +47,37 @@
   }
 }
 
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/Gilroy-Regular.ttf") format("truetype");
+  font-weight: 400; /* Regular */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-medium";
+  src: url("/fonts/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500; /* Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-Black";
+  src: url("/fonts/Gilroy-Black.ttf") format("truetype");
+  font-weight: 800; /* Medium */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-semibold";
+  src: url("/fonts/Gilroy-SemiBold.ttf") format("truetype");
+  font-weight: 600; /* SemiBold */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-bold";
+  src: url("/fonts/Gilroy-Bold.ttf") format("truetype");
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}

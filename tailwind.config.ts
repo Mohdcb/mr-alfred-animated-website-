@@ -51,6 +51,14 @@ const config: Config = {
   				'5': 'hsl(var(--chart-5))'
   			}
   		},
+
+		  fontFamily: {
+			gilroy: ["Gilroy", "sans-serif"],
+			"gilroy-b": ["Gilroy-Bold", "sans-serif"],
+			"gilroy-sb": ["Gilroy-SemiBold", "sans-serif"],
+			"gilroy-m": ["Gilroy-Medium", "sans-serif"],
+		  },
+
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
@@ -58,6 +66,6 @@ const config: Config = {
   		}
   	}
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"),require('tailwindcss-intersect') ],
 };
 export default config;
